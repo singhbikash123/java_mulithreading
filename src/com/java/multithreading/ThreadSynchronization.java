@@ -1,6 +1,6 @@
 package com.java.multithreading;
 
-public class Multithreading implements Runnable{
+public class ThreadSynchronization implements Runnable{
 	
 	private int i =0;
 	
@@ -29,8 +29,8 @@ public class Multithreading implements Runnable{
 	
 	public static void main(String args[]) {
 		
-		Runnable r1 = new Multithreading();
-		Runnable r2 = new Multithreading();
+		Runnable r1 = new ThreadSynchronization();
+		Runnable r2 = new ThreadSynchronization();
 
 		Thread t1 = new Thread(r1,"Thread 1");
 		Thread t2 = new Thread(r2,"Thread 2");
